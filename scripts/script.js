@@ -37,9 +37,9 @@ $(document).ready(() => {
     $("body").on("mouseenter", ".container .reserved", (e) => {
         $(".guest-details").appendTo(e.target);
         $(".guest-details").show();
-        $(".guest-details p").eq(0).text($(e.target).data("guest-name"));
-        $(".guest-details p").eq(1).text($(e.target).data("guest-phone"));
-        $(".guest-details p").eq(2).text($(e.target).data("guest-p-size"));
+        $(".guest-details p").eq(0).text("Name: " + $(e.target).data("guest-name"));
+        $(".guest-details p").eq(1).text("Phone: " + $(e.target).data("guest-phone"));
+        $(".guest-details p").eq(2).text("Size of Party: " + $(e.target).data("guest-p-size"));
     });
     $("body").on("mouseleave", ".container .reserved", (e) => {
 
