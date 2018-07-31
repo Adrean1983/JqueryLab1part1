@@ -16,6 +16,15 @@ $(document).ready(() => {
         $("form").hide();
     });
 
+    $("body").on("mouseenter mouseleave", ".container .available", (e) => {
+        $(e.target).toggleClass("hover");
+    });
+
+    $(".available").on("click", (e) => {
+        table = $(e.target)
+        $("form").show();
+ 
+    });
 
 });
 
